@@ -1,55 +1,39 @@
-<html lang="en">
+<html>
 
 <head>
-    <title>Decorate My Text</title>
-    <link rel="stylesheet" href="../styles/decorate.css">
-    <script src="./js/lab6.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Text Decorator</title>
+    <link href="./index_files/decoratemytext.css" type="text/css" rel="stylesheet">
+
+    <!--
+    This is a widely-used JavaScript library named jQuery that has
+    many useful functions which we need.
+    Please don't remove this link or change its URL; leave it as-is!
+    -->
+    <script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
+
+    <!-- link to your script file here -->
+    <script src="../resources/js/decoratemytext.js"></script>
 </head>
 
-<body data-new-gr-c-s-check-loaded="14.1002.0" data-gr-ext-installed="">
+<body data-new-gr-c-s-check-loaded="14.982.0" data-gr-ext-installed="">
     <h1>Text Decorator</h1>
 
     <div>
-        <img src="img/decorated.gif" alt="very decorated!">
+        <img src="./index_files/decorated.gif" alt="very decorated!">
     </div>
-
-    <fieldset>
+    <fieldset style="width: 50%;">
         <legend>Text</legend>
-        <textarea rows="4" cols="30" id="text">		Sample Item 1
-            Sample Item 2
-            </textarea>
+        <textarea id="textAreaId" rows="4" cols="30"></textarea>
     </fieldset>
-    <fieldset>
-        <legend>Decoration</legend>
-        <label><button id="bigger">Bigger Decorations!</button></label><br>
-        <label><input id="myCheck" type="checkbox">Bling</label>
-    </fieldset>
-    <br>
-    <input type="button" id="igpay-atinlay" value="Igpay Atinlay"><br> <br>
-    <input type="button" id="malkovitch" value="Malkovitch"> <br>
     <!-- Your UI controls go here -->
-    <p id="name"> <span class="home"><a id="home" href="https://abyalewambaneh.github.io/CS-472-WAP/"><strong>Home</strong></a></span></p>
-
-
-
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <a href="https://validator.w3.org/check/referer">
-                        <img src="./images/w3c-html.png" alt="html validator">
-                    </a>
-                </td>
-                <td>
-                    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                        <img src="./images/w3c-css.png" alt="css validator">
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-
+    <fieldset style="width: 50%;">
+        <legend>Decoration</legend>
+        <button type="button" id="biggerDecorationButton">Bigger Decoration</button>
+        <button type="button" id="pigLatinButton">Pig Latin</button>
+        <button type="button" id="malkovitchButton">Malkovitch</button><br>
+        <input type="checkbox" id="blingCheckBox" /> Bling
+    </fieldset>
 
 </body>
 
